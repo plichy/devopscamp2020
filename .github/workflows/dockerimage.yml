@@ -15,9 +15,9 @@ jobs:
       - uses: mr-smithers-excellent/docker-build-push@v3
         name: Build & push Docker image
         with:
-          image: WPISZ_TWOJE_ID/WPISZ_NAZWĘ_REPO
+          image: plichy/devopscamp2020
           tag: latest
           registry: docker.io
           dockerfile: Dockerfile
-          username: WPISZ_TWOJE_ID
+          username: plichy
           password: ${{ secrets.DOCKER_PASS }}
